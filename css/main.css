@@ -1,0 +1,1084 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*Variables*/
+:root {
+  --delay: 0.1;
+}
+
+body {
+  background-color: #22272e;
+}
+
+html {
+  color: #f6f7f9;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-family: "Gotham", sans-serif;
+}
+
+/*Header*/
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  --n:50
+}
+
+h3 {
+  --n:30
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-family: "Gotham", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 15px;
+  margin-bottom: 10px
+}
+
+h3 {
+  font-weight: 400 !important;
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+
+
+/*List*/
+
+ul li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Paragraphs*/
+
+p {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/*Common Styles*/
+.float-left {
+  float: left
+}
+
+.float-right {
+  float: right
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap
+}
+
+.ten-top-bottom-margins {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.twenty-top-margin {
+  margin-top: 20px;
+}
+
+.twenty-bottom-margin {
+  margin-bottom: 20px;
+}
+
+.ten-bottom-margin {
+  margin-bottom: 10px;
+}
+
+.ten-top-margin {
+  margin-top: 10px;
+}
+
+.thirty-top-margin {
+  margin-top: 30px
+}
+
+.thirty-bottom-margin {
+  margin-bottom: 30px
+}
+
+.thirty-top-bottom-margin {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+/*CSS drawings*/
+/*Timeline*/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  margin-left: -3px;
+}
+
+.timeline-section {
+  float: left;
+  margin-top: 50px
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #22272e;
+  border: 3px solid #f6f7f9;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* The actual timeline content */
+.timeline-content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+.vertLine {
+  border-right: 1px solid red;
+}
+
+/*Navigation styles*/
+
+/*Navigation tabs initial states*/
+#Contact {
+  display: block;
+}
+
+#Experience {
+  display: block;
+}
+
+#MobileAbout {
+  display: none;
+}
+
+.desktop-navigation-text {
+  margin-bottom: 2px;
+  margin-top: 5px
+}
+
+.mobile-nav-buttons-flex {
+  flex-wrap: wrap;
+}
+
+#pathvision-btn {
+  margin-left: 0;
+  margin-top: 15px;
+}
+
+.navigation-container {
+  margin-top: 20px;
+  margin-bottom: 10px
+}
+
+/*Arrow bullet points*/
+
+.arrowBullets {
+  margin-top: 30px;
+}
+
+.arrowBullets ul li {
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+.arrowBullets ul {
+  list-style: none;
+}
+
+.arrowBullets ul li:before{
+  content: '';
+  position: absolute;
+  border-right:2px solid white;
+  border-bottom:2px solid white;
+  width:10px;
+  height:10px;
+  top: calc(50% - 4px);
+  left: -35px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/*Muted*/
+.muted {
+  color: #abb3bf;
+}
+
+.education-icon {
+  max-height: 120px;
+}
+
+.project-icon {
+  max-height: 150px;
+}
+
+/*Content containers*/
+.content-container {
+  width: 80%;
+}
+.desktop-menu {
+  width: 15%;
+}
+
+.typewriter {
+  color:#0000;
+  background:
+    linear-gradient(-90deg,#0000 0px,#0000 0) 10px 0,
+    linear-gradient(#f6f7f9 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation:
+    b .0s infinite steps(1),
+    t calc(var(--n)*.03s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Removing styling for hyperlinks*/
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
+}
+
+.contactList a:hover {
+  color: #f6f7f9;
+}
+
+#socials a:hover {
+  color: #767676;
+}
+
+#socials a {
+  color: #f6f7f9;
+  transition: 0.3s;
+}
+
+.light-link {
+  color: #767676;
+  transition: 0.3s;
+}
+
+.light-link:hover {
+  color: #f6f7f9;
+  transition: 0.3s;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab p, .tab h3 {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab p:hover, .tab h3:hover {
+  color: #767676;
+}
+
+/* Create an active/current tablink class */
+.tab p.active, h3.active {
+  color: #767676;
+}
+
+/* Style the tab content */
+.portfolio_tabcontent {
+  display: none;
+  border-top: none;
+}
+
+
+hr.new4 {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+  border-color: white;
+}
+
+.img-profile {
+  max-width: 11rem;
+  max-height: 11rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  mix-blend-mode: difference;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.tech-icons-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  padding: 100px;
+}
+
+/* Typography */
+
+.bright-text {
+  color: dodgerblue;
+}
+
+/*Name Section*/
+
+.name-container {
+  margin-top: 2%
+}
+
+.name-h1 {
+  margin-bottom: 30px;
+  --n:12;
+}
+
+/*About Me Section*/
+
+.about-section-col {
+  width: 15%
+}
+
+/*Contact Section*/
+
+.contact-section-col {
+  width: 40%;
+  height: 200px
+}
+
+
+.aboutme_tabcontent {
+  display: none;
+  border-top: none;
+  list-style:none;
+  margin: 3px;
+  padding: 0
+}
+
+.contact-hover-item {
+  float: right;
+  color: #9b9b9b
+}
+
+.introduction-container {
+  width: 35%
+}
+
+
+/*Technology Section*/
+
+.tech-icon-con {
+  width: 400px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.tech-icon {
+  max-height: 80px;
+  margin-bottom: 10px;
+}
+
+.aws {
+  width: auto
+}
+
+.aws img {
+  max-height: 60px
+}
+
+/*Projects Section*/
+
+.bepanda-text {
+  margin-top: 10px;
+  font-size: 30pt;
+  font-family: Varela Round, sans-serif;
+}
+
+.bepanda-container {
+  text-align: center;
+  float: left
+}
+
+.bt-container {
+  text-align: center;
+  float: left
+}
+
+.bt-col {
+  align-items: center;
+}
+
+.bt-text {
+  width: 215px
+}
+
+
+/*Mobile*/
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.contact-container {
+  width: 100%;
+  padding-right: 20px
+}
+
+
+
+/*Experience*/
+
+/*SONY*/
+.SONY-h2-text {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  --n:25
+}
+
+.SONY-p-text {
+  --n:30
+}
+
+.SONY-Section {
+  max-width: 900px
+}
+
+.SONY-Section h3 {
+  margin-bottom: 30px
+}
+
+.SONY-Section h4 {
+  margin-bottom: 5px;
+  --n:13
+}
+
+.SONY-Section p {
+  margin-bottom: 20px;
+  color: #9b9b9b
+}
+
+.SONY-text-container {
+  max-width: 1200px;
+}
+
+.SONY-system-architecture {
+  min-width: 400px;
+  object-fit: contain;
+  width: 1100px;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 80em) {
+  .html {
+    font-size: 0.9em;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+
+}
+
+
+@media only screen and (max-width: 70em) {
+  .desktop-menu {
+    display: none;
+  }
+  .content-container {
+    width: 100%;
+  }
+
+  /*Scaling down the headers*/
+  .main-container {
+    padding: 15px;
+  }
+  .timeline-container {
+    padding: 0;
+  }
+
+  html {
+    padding: 5px;
+    font-size: 0.9em;
+  }
+
+  #AboutSection {
+    display: none;
+  }
+
+  #MobileAbout {
+    display: block;
+  }
+
+  .SONY-system-architecture {
+    display: none;
+  }
+
+  #SONY-hosted-system-architecture {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.btn {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #212529;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  cursor:pointer;
+  vertical-align: middle;
+  margin: 5px 3px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  color: #fff;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+  background-color: #545b62;
+  border-color: #4e555b;
+  color: #fff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  color: #212529;
+}
+
+.btn-light:focus,
+.btn-light.focus {
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+.btn-light.disabled,
+.btn-light:disabled {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:not(:disabled):not(.disabled).active,
+.show>.btn-light.dropdown-toggle {
+  background-color: #dae0e5;
+  border-color: #d3d9df;
+  color: #212529;
+}
+
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.btn-light:not(:disabled):not(.disabled).active:focus,
+.show>.btn-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+.btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+  color: #fff;
+}
+
+.btn-dark:focus,
+.btn-dark.focus {
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+.btn-dark.disabled,
+.btn-dark:disabled {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active,
+.show>.btn-dark.dropdown-toggle {
+  background-color: #1d2124;
+  border-color: #171a1d;
+  color: #fff;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.show>.btn-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+.btn-outline-light {
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-outline-light:focus,
+.btn-outline-light.focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-outline-light.disabled,
+.btn-outline-light:disabled {
+  background-color: transparent;
+  color: #f8f9fa;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.btn-outline-light:not(:disabled):not(.disabled).active,
+.show>.btn-outline-light.dropdown-toggle {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled):active:focus,
+.btn-outline-light:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+  border-radius: 0.3rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+}
+
+.btn-sm,
+.btn-group-sm>.btn {
+  border-radius: 0.2rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block+.btn-block {
+  margin-top: 1.5rem;
+}
+
+/* default
+---------------------------- */
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:typewriter" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+  <meta property="og:title" content="Portfolio Webpage">
+  <meta property="og:image" content="https://ams03pap003files.storage.live.com/y4m42ym2M3NwqdM8KvghENv4BRBpeLeHKUo6CbQz6b6S4ADfo2oZj5QvGe2_WqGS-edYjR3LfnHtogMtHHXQ6KtJ9Q_yZ0_JbKDZXYWJoro851BUnvkEP1AgTCIePeLF4DXzfNco_8gY3T8z_7PWrnx_yRnPn-cQz-EdQNFFTh8u74PA0Rt-QHR395XYQYbclPI?width=1024&height=600&cropmode=none">
+  <meta property="og:description" content="Toby Johnson's Portfolio Webpage">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://ams03pap003files.storage.live.com/*; script-src 'self' https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js;">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+          integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- End - Fancybox Scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<!-- Add your site or application content here -->
+<div class="main-container">
+  <div class="flex-col name-container">
+    <h1 class="typewriter name-h1">Toby Johnson</h1>
+    <div class="flex-row" id="AboutSection">
+      <div class="flex-col about-section-col">
+        <hr class="new4">
+        <div class="tab">
+          <p class="aboutme_tablinks active" id="contact-navigation-text">Contact</p>
+          <p class="aboutme_tablinks" id="info-navigation-text">Info</p>
+        </div>
+      </div>
+      <div class="flex-col contact-section-col">
+        <hr class="new4">
+        <ul id="Contact" class="aboutme_tabcontent contactList">
+          <div class="flex-col">
+            <li>
+              <p class="fade-in float-left">
+                Email
+              </p>
+              <p class="fade-in contact-hover-item">
+                <a href="mailto:hello.abstract027@passinbox.com">hello.abstract027@passinbox.com</a>
+              </p>
+            </li>
+          </div>
+        </ul>
+        <ul id="Info" class="aboutme_tabcontent">
+          <div class="flex-col">
+            <li>
+              <p class="fade-in float-left">
+                Currently
+              </p>
+              <p class="fade-in contact-hover-item">
+                Working for Capgemini Invent as a Full-Stack Software Engineer
+              </p>
+            </li>
+            <li>
+              <p class="fade-in float-left">
+                Location
+              </p>
+              <p class="fade-in contact-hover-item">
+                West Sussex, England
+              </p>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="flex-col introduction-container">
+        <hr class="new4">
+        <p>Full-Stack Software Engineer at Capgemini Invent</p>
+        <h4 class="fade-in float-right" id="socials">
+          <a href="https://www.linkedin.com/in/toby-johnson-26b517175/">LinkedIn</a>
+          <span>|</span>
+          <a href="https://github.com/toby-j">GitHub</a>
+          <span>|</span>
+          <a href="https://medium.com/@toby-j">Medium</a>
+        </h4>
+      </div>
+    </div>
+    <div id="MobileAbout">
+      <div class="flex-row">
+        <div class="flex-col contact-container">
+          <div class="flex-row">
+            <p class="muted">Email</p>
+            <a href="mailto:hello.abstract027@passinbox.com">hello.abstract027@passinbox.com</a>
+          </div>
+          <div class="flex-row">
+            <p class="muted">Currently</p>
+            <p>Working for Capgemini Invent as Full-Stack Software Engineer
+          </div>
+          <div class="flex-row">
+            <p class="muted">Location</p>
+            <p>West Sussex, England</p>
+          </div>
+          <div class="flex-row">
+            <p class="muted">GitHub</p>
+            <a href="https://github.com/toby-j">https://github.com/toby-j</a>
+          </div>
+          <div class="flex-row">
+            <p class="muted">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/toby-johnson-26b517175/">https://www.linkedin.com/in/toby-johnson-26b517175/</a>
+          </div>
+          <div class="flex-row">
+            <p class="muted">Medium</p>
+            <a href="https://medium.com/@toby-j">https://medium.com/@toby-j</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row mobile-nav-buttons-flex">
+        <button class="portfolio_tablinks btn btn-outline-light active" id="experience-tab-mobile">Experience</button>
+        <button class="portfolio_tablinks btn btn-outline-light" id="techstack-tab-mobile">Technology Stack</button>
+        <button class="portfolio_tablinks btn btn-outline-light" id="projects-tab-mobile">Projects</button>
+        <button class="portfolio_tablinks btn btn-outline-light" id="education-tab-mobile">Education</button>
+      </div>
+    </div>
+    <div class="flex-row">
+      <div class="flex-col desktop-menu">
+        <hr class="new4">
+        <div class="tab">
+          <h3 class="portfolio_tablinks desktop-navigation-text active" id="experience-tab-desktop">Experience</h3>
+          <h3 class="portfolio_tablinks desktop-navigation-text" id="techstack-tab-desktop">Technology Stack</h3>
+          <h3 class="portfolio_tablinks desktop-navigation-text" id="projects-tab-desktop">Projects</h3>
+          <h3 class="portfolio_tablinks desktop-navigation-text" id="education-tab-desktop">Education</h3>
+        </div>
+      </div>
+      <div class="content-container">
+        <hr class="new4">
+        <div class="portfolio_tabcontent" id="Experience">
+          <h2 class="typewriter SONY-h2-text">Capgemini Invent</h2>
+          <p class="typewriter SONY-p-text">Full-Stack Software Engineer</p>
+          <p class="typewriter SONY-p-text">London, England</p>
+          <p class="muted">April 2024 - Present</p>
+          <div class="flex-row flex-wrap-wrap">
+            <div class="SONY-Section">
+              <h3>DVSA</h3>
+              <h4>Core technologies</h4>
+              <h5 class="muted">TypeScript, AWS, Terraform, PlayWright, Jest, Gatling</h5>
+              <h4>Role description and achievements</h4>
+              <div class="arrowBullets">
+                <ul>
+                  <li>I joined the project during the initial planning and analysis phase, and I contributed significantly to the development of both the alpha and beta releases of the serverless AWS middleware application.</li>
+                  <li>I engineered complex data transformations between EU and DVSA services using TypeScript Lambda functions, ensuring high performance and thorough testing with Jest.</li>
+                  <li>I contributed to refining and evolving the AWS architecture in response to shifting requirements and successfully implemented these changes in the AWS environment.</li>
+                  <li>As part of Agile practices, I conduct a demo at the end of each sprint, showcasing my completed work or milestone progress to key stakeholders to ensure transparency, gather feedback, and maintain alignment with project objectives.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex-row flex-wrap-wrap"></div>
+          <h2 class="typewriter SONY-h2-text">Sony Europe</h2>
+          <p class="typewriter SONY-p-text">Software Engineer Contractor</p>
+          <p class="typewriter SONY-p-text">Basingstoke, England</p>
+          <p class="muted">Nov 2022 - March 2024</p>
+          <div class="flex-row flex-wrap-wrap">
+              <div class="SONY-Section">
+                <h4>Core technologies</h4>
+                <h5 class="muted">Python, C#, React.js, TensorFlow, OpenCV, JavaScript, TypeScript, Django, Docker, PostgreSQL</h5>
+                <h4>Role description and achievements</h4>
+                <div class="arrowBullets">
+                  <ul>
+                    <li>I was asked to return to the Software Quality Assurance (SQA) team to lead the scaling, development and deployment of the machine learning system I had designed and developed in my placement year.</li>
+                    <li>Using Ansible and GitHub Actions, I developed a CI/CD pipeline to containerise and deploy a Python machine learning application to various international Windows servers. Presently, I am working with our AI engineers in Germany to add new functionality to this Python application, such as automated test case creation.</li>
+                    <li>I designed and continue to develop a full-stack web application that provides analytics on the Python tool’s data. Built with React.js, Django, Next.js, TypeScript and PostgreSQL; a platform for Sony’s non-technical personnel to make better, data-driven decisions with Sony TV software packages.</li>
+                    <li>Designed a symmetric encryption protocol for securely transferring user information between internal applications. Recognizing its potential for broader use, I presented it to other teams. Subsequently, I created comprehensive technical documentation and supported various teams in its implementation.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="typewriter SONY-h2-text">Sony Europe</h2>
+          <p class="typewriter SONY-p-text">Software Engineer Contractor</p>
+          <p class="typewriter SONY-p-text">Basingstoke, England</p>
+          <p class="muted">July 2021 - July 2022</p>
+          <div class="flex-row flex-wrap-wrap">
+            <div class="SONY-Section">
+              <h4>Core technologies</h4>
+              <h5 class="muted">Python, C++, React.js, TensorFlow, OpenCV, TypeScript, Django</h5>
+              <h4>Role description and achievements</h4>
+              <div class="arrowBullets">
+                <ul>
+                  <li>In the SQA team, I developed a multi-threaded, Python-based machine learning tool coupled with a web application to provide analytics and report generation on the tool’s collected, confidential data.</li>
+                  <li>I developed convolutional neural networks and a navigation algorithm with object detection to traverse Sony’s TV software. During traversal, the tool would collect mission-critical data on the TV software, which would then be sent to the web application for analysis and visualisation.</li>
+                  <li>I worked throughout the year with senior Sony engineers and managers to amend and create new test case specifications for the TV software, we then developed our tool to meet these new specifications.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_tabcontent" id="TechStack">
+          <h2 class="typewriter">Technology Stack</h2>
+          <div class="flex-col">
+            <h3 class="typewriter">Core languages</h3>
+            <div class="tech-icons-flex-row">
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/python.png" class="tech-icon">
+                  <h4>Python</h4>
+                  <p class="muted">Over 2 years of commercial experience with Python and used to create my dissertation project.</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/java.png" class="tech-icon">
+                  <h4>Java</h4>
+                  <p class="muted">Built Java applications during university as well as android mobile applications.</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/javascript.png" class="tech-icon">
+                  <h4>JavaScript</h4>
+                  <p class="muted">Strong knowledge of JavaScript from building a commercial grade web application at Sony Europe and Capgemini</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/csharp.png" class="tech-icon">
+                  <h4>C#</h4>
+                  <p class="muted">Familiar with C# from developing internal Windows tools at Sony Europe</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/html5.png" class="tech-icon">
+                  <h4>HTML</h4>
+                  <p class="muted">Over 3 years industry experience with HTML through various web application projects</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/css.png" class="tech-icon">
+                  <h4>CSS</h4>
+                  <p class="muted">Learned from the various sites I've built. Familer with Flexbox and Tailwind CSS</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="typewriter">Frameworks, libraries and supersets</h3>
+            <div class="tech-icons-flex-row">
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/django.png" class="tech-icon">
+                  <h4>Django and Django Rest Framework</h4>
+                  <p class="muted">Strong experience from building industry level backends with Django for Sony Europe</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/react.png" class="tech-icon">
+                  <h4>React.js</h4>
+                  <p class="muted">Been working with React for over 4 years building enterprise tools and from personal projects</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/typescript.png" class="tech-icon">
+                  <h4>TypeScript</h4>
+                  <p class="muted">I've always adopted TypeScript for its vast improvement to developer experience. Have over 4 years experience working with it on enterprise codebases and from personal projects</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/pytorch.png" class="tech-icon">
+                  <h4>PyTorch</h4>
+                  <p class="muted">My dissertation project is written with PyTorch for it's higher level of flexibility for machine vision applications. You can see this project <a class="bright-text" href="https://github.com/toby-j/pathvision">here</a>.</p></div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/tensorflow.png" class="tech-icon">
+                  <h4>TensorFlow</h4>
+                  <p class="muted">Good knowledge of TensorFlow from university. I'm also familiar with TensorFlow Lite, having used it for enterprise IoT devices.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="typewriter">Version Control</h3>
+            <div class="tech-icons-flex-row">
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/git.png" class="tech-icon">
+                  <h4>Git</h4>
+                  <p class="muted">Several years I've been working with Git for my projects and enterprise work.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="typewriter">Databases</h3>
+            <div class="tech-icons-flex-row">
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/postgresql.png" class="tech-icon">
+                  <h4>PostgreSQL</h4>
+                  <p class="muted">Familiar with designing structured, relational schemas for enterprise tools</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/mongodb.svg" class="tech-icon">
+                  <h4>MongoDB</h4>
+                  <p class="muted">Built and maintained a relica set during my time at Sony Europe. Familiar with Mongo's cloud tools and integration with backend frameworks
+                  </p>
+                  <a href="https://medium.com/@toby-j/deploying-a-mongodb-replica-set-8c028cb02a07">Medium guide</a>.
+                </div>
+              </div>
+            </div>
+            <h3>Containerisation</h3>
+            <div class="tech-icon-con">
+              <div>
+                <img src="img/tech-icons/docker.png" class="tech-icon">
+                <h4>Docker</h4>
+                <p class="muted">Containerized various web applications with docker and have deployed Python containers to various international Windows servers.</p>
+              </div>
+            </div>
+            <h3>Cloud Services</h3>
+            <div class="flex flex-col space-y-4">
+              <div class="flex items-center space-x-4">
+                <img src="img/tech-icons/aws.png" class="tech-icon" alt="aws icon">
+                <h4>Amazon Web Services</h4>
+              </div>
+              <div class="grid grid-cols-4 gap-4">
+                <img src="img/tech-icons/Elastic%20Beanstalk.svg" alt="Elastic Beanstalk" class="w-6 h-6">
+                <img src="img/tech-icons/EC2.svg" alt="EC2" class="w-6 h-6">
+                <img src="img/tech-icons/Cognito.svg" alt="Cognito" class="w-6 h-6">
+                <img src="img/tech-icons/Step%20Functions.svg" alt="Step Functions" class="w-6 h-6">
+                <img src="img/tech-icons/Lambda.svg" alt="Lambda" class="w-6 h-6">
+                <img src="img/tech-icons/EC2.svg" alt="EC2" class="w-6 h-6">
+                <img src="img/tech-icons/Cognito.svg" alt="Cognito" class="w-6 h-6">
+                <img src="img/tech-icons/Simple%20Queue%20Service.svg" alt="Simple Queue Service" class="w-6 h-6">
+                <img src="img/tech-icons/Simple%20Storage%20Service.svg" alt="S3" class="w-6 h-6">
+                <img src="img/tech-icons/WAF.svg" alt="WAF" class="w-6 h-6">
+                <img src="img/tech-icons/DynamoDB.svg" alt="DynamoDB" class="w-6 h-6">
+              </div>
+            </div>
+            <h3>Platforms</h3>
+            <div class="tech-icons-flex-row">
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/windows.png" class="tech-icon">
+                  <h4>Windows</h4>
+                  <p class="muted">Worked on Windows Server 2019 to deploy Python containers during my work with Sony Europe</p>
+                </div>
+              </div>
+              <div class="tech-icon-con">
+                <div>
+                  <img src="img/tech-icons/linux.png" class="tech-icon">
+                  <h4>Linux</h4>
+                  <p class="muted">Good unix skills built over time working with containers, WSL and primarily Debian-based distros for over 5 years</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_tabcontent" id="Projects">
+          <div class="flex-col thirty-top-bottom-margin">
+            <div>
+              <div class="bepanda-container">
+                <img src="img/project-icons/panda.png" class="project-icon ten-top-margin">
+                <p class="bepanda-text">BePanda</p>
+              </div>
+            </div>
+          </div>
+          <p class="muted">Small project selling reusable drink flasks and cups</p>
+          <p class="thirty-top-margin">Founded by myself, I wanted to provide people with an alternative to single use plastic coffee cups.</p>
+          <p>I designed and branded two products and shared profits with a plastic pollution charity.</p>
+          <p class="thirty-bottom-margin">I've sold them in local garden centers and are available online.</p>
+          <button class="btn btn-outline-light" id="bepanda-website-btn">View Website</button>
+          <div class="flex-col thirty-top-bottom-margin">
+            <div>
+              <div class="bt-container">
+                <div class="flex-col bt-col">
+                  <img src="img/project-icons/btlogo.png" class="project-icon bt-text ten-top-margin">
+                  <img src="img/project-icons/bttext.png" class="project-icon bt-text ten-top-margin">
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="muted">“To accelerate the transition to natural and ethical cosmetic products”</h4>
+          <p class="muted">A mobile application to analyse ingredients on beauty products.</p>
+        
+          <p class="twenty-top-margin">Started by me and some friends at university, we wanted to increase the convenience and confidence for consumers in identifying natural and ethical cosmetic products.</p>
+          <p>I developed a barcode scanner in Swift and Kotlin that would fetch from a product database and display product information. </p>
+          <h3>Resources</h3>
+          <button class="btn btn-outline-light" id="bt-cloud-architecture-btn">Cloud Architecture</button>
+          <button class="btn btn-outline-light" id="bt-flow-diagram-btn">Flow Diagram</button>
+          <button class="btn btn-outline-light" id="bt-ui-designs-btn">UI Designs</button>
+          <button class="btn btn-outline-light" id="bt-barcode-scanner-btn">Barcode Scanner Screenshot</button>
+        </div>
+        <div class="portfolio_tabcontent" id="Education">
+          <div class="timeline-section">
+            <div class="timeline">
+              <div class="timeline-container right">
+                <div class="timeline-content">
+                  <img src="img/education-icons/surrey.png" class="education-icon" alt="surrey logo">
+                  <h2 class="typewriter">University of Surrey</h2>
+                  <p>Bachelor's degree, Computer Science and Information Technology BSc</p>
+                  <p>With Professional Training Year</p>
+                  <p class="muted">2019 - 2023</p>
+                  <h3>Awarded First Class Honours</h3>
+                  <h3 class="typewriter">Year 4</h3>
+                  <p class="twenty-bottom-margin muted">2022 - 2023</p>
+                  <div class="flex-col">
+                    <div class="flex-row">
+                      <p class="muted">Deep Learning and Advanced AI</p>
+                      <p>70%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Information Security Management</p>
+                      <p>61%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Distributed Systems</p>
+                      <p>80%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Internet of Things</p>
+                      <p>58%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Natural Language Processing</p>
+                      <p>62%</p>
+                    </div>
+                    <div class="flex-row">
+                      <h4>Total</h4>
+                      <h4>70%</h4>
+                    </div>
+                    <p class="muted float-right">No resits</p>
+                    <div class="flex-row">
+                      <h4>Final Year Project</h4>
+                    </div>
+                    <p class="muted">Pathvision: An open source, object tracking algorithm and an Explainable AI method utilising cutting-edge, gradient-based techniques to explain decisions made by object detection models.</p>
+                    <div class="flex-row">
+                      <button class="btn btn-outline-light" id="pathvision-btn">Repository</button>
+                    </div>
+                  </div>
+                  <h3 class="typewriter">Professional Training Year</h3>
+                  <p class="twenty-bottom-margin muted">2021 - 2022</p>
+                  <div class="flex-row">
+                    <p class="muted">Sony Professional Solutions Europe</p>
+                    <p>Software Engineer Intern</p>
+                  </div>
+                  <h3 class="typewriter">Year 2</h3>
+                  <p class="muted twenty-bottom-margin">2020 - 2021</p>
+                  <div class="flex-col">
+                    <div class="flex-row">
+                      <p class="muted">Computer Networking</p>
+                      <p>83%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Web Applications Development</p>
+                      <p>65%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Software Engineering Project</p>
+                      <p>81%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Artificial Intelligence</p>
+                      <p>81%</p>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <div class="flex-row">
+                      <p class="muted">Information Retrieval</p>
+                      <p>76%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Further Programming Paradigms</p>
+                      <p>79%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Business Law</p>
+                      <p>77%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Finance For Business 1</p>
+                      <p>50%</p>
+                    </div>
+                  </div>
+                  <div class="flex-row">
+                    <h4 class="typewriter">Total</h4>
+                    <h4>73.75%</h4>
+                  </div>
+                  <p class="muted float-right">No resits</p>
+                  <h3 class="typewriter">Year 1</h3>
+                  <p class="muted twenty-bottom-margin">2019 - 2020</p>
+                  <div class="flex-col">
+                    <div class="flex-row">
+                      <p class="muted">Web And Database Systems</p>
+                      <p>81%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Foundations Of Computing ||</p>
+                      <p>85%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Programming Fundamentals</p>
+                      <p>80%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Software Engineering</p>
+                      <p>84%</p>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <div class="flex-row">
+                      <p class="muted">Data Structures And Algorithms</p>
+                      <p>64%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Foundations Of Computing</p>
+                      <p>49%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Financial Accounting</p>
+                      <p>61%</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Marketing Principles</p>
+                      <p>58%</p>
+                    </div>
+                  </div>
+                  <div class="flex-row">
+                    <h4>Total</h4>
+                    <h4>70.25%</h4>
+                  </div>
+                  <p class="muted float-right">No resits</p>
+                </div>
+              </div>
+              <div class="timeline-container right">
+                <div class="timeline-content">
+                  <img src="img/education-icons/bhasvic.png" class="education-icon">
+                  <h2 class="typewriter">Brighton, Hove & Sussex Sixth Form College</h2>
+                  <p class="ten-bottom-margin">Sixth form college</p>
+                  <p class="muted">2016 - 2018</p>
+                  <div class="flex-col twenty-top-margin">
+                    <div class="flex-row">
+                      <p class="muted">Computer Science A Level</p>
+                      <p>B</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Extended Project</p>
+                      <p>C</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Business BTEC Level 3 Subsidiary Diploma</p>
+                      <p>Distinction*</p>
+                    </div>
+                    <div class="flex-row">
+                      <p class="muted">Applied Law BTEC Level 3 Certificate</p>
+                      <p>Distinction*</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-container right">
+                <div class="timeline-content">
+                  <img src="img/education-icons/downlands.png" class="education-icon">
+                  <h2 class="typewriter">Downlands Community School</h2>
+                  <p class="ten-bottom-margin">Secondary School</p>
+                  <p class="muted">2011 - 2016</p>
+                  <div class="flex-col twenty-top-margin">
+                    <div class="flex-row">
+                      <p class="muted">GCSEs Including Maths and English </p>
+                      <p>A-C</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>
+    © 2024 Developed and Designed by
+    <a href="https://www.linkedin.com/in/toby-johnson-26b517175/" class="underline">Toby Johnson</a>
+  </p>
+</div>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

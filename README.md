@@ -1,3 +1,5 @@
-# A pure CSS, HTML Portfolio site made to deploy on GitHub Pages
+# portfolio
+
+Pure HTML minimal portfolio site with TailwindCSS
 
 Feel free to fork, edit and deploy your own on Pages!
